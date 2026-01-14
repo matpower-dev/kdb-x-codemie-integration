@@ -1,0 +1,3 @@
+QUERY,BAD,GOOD
+Can you tell me how many rows are in the trade table,SELECT COUNT(*) FROM trade,SELECT * FROM trade LIMIT 1 OFFSET 1
+Can you find the 7th row in the trade table,SELECT * FROM trade LIMIT 1 OFFSET 6,SELECT * FROM trade LIMIT 1 OFFSET 7

@@ -6,4 +6,4 @@ cd "$SCRIPT_DIR" || exit 1
 export PYTHONPATH="$SCRIPT_DIR":$PYTHONPATH
 . ~/myenv/bin/activate
 . .env
-uv run mcp-server --db.port=$ARG
+mcp-server --db.port=$ARG

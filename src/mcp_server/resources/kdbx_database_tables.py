@@ -4,9 +4,9 @@ from mcp.types import TextContent
 from mcp_server.utils.kdbx import get_kdb_connection
 from mcp_server.utils.format_utils import format_data_for_display
 from mcp_server.utils.embeddings_helpers import get_embedding_config
+from pandas import read_csv
 
 logger = logging.getLogger(__name__)
-
 
 async def kdbx_describe_table_impl(table: str) -> List[TextContent]:
     """
