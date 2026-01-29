@@ -1,8 +1,8 @@
+#!/usr/bin/env bash
 # Get the directory where the script itself is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ARG=${1:-5896}
+
 # Change into that directory
 cd "$SCRIPT_DIR" || exit 1
-export PYTHONPATH="$SCRIPT_DIR":$PYTHONPATH
-. .env
-uv run mcp-server --db.port=$ARG
+echo "hello world"
+codemie-plugins mcp run -s kdbx-streamable
